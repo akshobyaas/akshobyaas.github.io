@@ -28,11 +28,11 @@ animRing();
 document.querySelectorAll('a, button, .btn, .chip, .project-card').forEach(el => {
   el.addEventListener('mouseenter', () => {
     ring.style.transform = 'translate(-50%,-50%) scale(1.8)';
-    ring.style.borderColor = 'rgba(79,70,229,0.7)';
+    ring.style.borderColor = 'rgba(225,29,44,0.9)';
   });
   el.addEventListener('mouseleave', () => {
     ring.style.transform = 'translate(-50%,-50%) scale(1)';
-    ring.style.borderColor = 'rgba(236,72,153,0.7)';
+    ring.style.borderColor = 'rgba(225,29,44,0.7)';
   });
 });
 
@@ -40,7 +40,7 @@ document.querySelectorAll('a, button, .btn, .chip, .project-card').forEach(el =>
 const canvas = document.getElementById('particles');
 const ctx = canvas.getContext('2d');
 let W, H, particles = [];
-const COLORS = ['#4f46e5', '#ec4899', '#06b6d4', '#f59e0b', '#818cf8'];
+const COLORS = ['#e11d2c', '#ff4757', '#9b0a15', '#dc2626', '#b91c1c'];
 
 function resize() {
   W = canvas.width = window.innerWidth;

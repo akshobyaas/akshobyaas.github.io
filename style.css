@@ -421,6 +421,7 @@ section {
 footer {
   padding:2rem 5vw; text-align:center;
   border-top:1px solid var(--border-red); color:var(--muted); font-size:0.85rem;
+  scroll-snap-align: start;
 }
 footer span {
   background:linear-gradient(90deg, var(--white), var(--red-light));
