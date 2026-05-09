@@ -1,395 +1,370 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Akshobya A S – Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <style>
-      .edu-badge-highlight {
-        background: rgba(225, 29, 44, 0.1);
-        border-color: rgba(225, 29, 44, 0.35);
-        color: var(--red-light);
-      }
-    </style>
-  </head>
-  <body>
-    <!-- CURSOR -->
-    <div id="cursor-dot"></div>
-    <div id="cursor-ring"></div>
 
-    <!-- LOADER -->
-    <div id="loader">
-      <div class="loader-initials">AAS</div>
-      <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akshobya A S – Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .edu-badge-highlight {
+      background: rgba(225, 29, 44, 0.1);
+      border-color: rgba(225, 29, 44, 0.35);
+      color: var(--red-light);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- CURSOR -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-initials">AAS</div>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar"></div>
     </div>
+  </div>
 
-    <!-- PARTICLE CANVAS -->
-    <canvas id="particles"></canvas>
+  <!-- PARTICLE CANVAS -->
+  <canvas id="particles"></canvas>
 
-    <!-- NAVBAR -->
-    <nav>
-      <a class="nav-logo" href="#">Akshobya A S</a>
-      <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="hamburger" id="hamburger">
-        <span></span><span></span><span></span>
-      </div>
-    </nav>
+  <!-- NAVBAR -->
+  <nav>
+    <a class="nav-logo" href="#">Akshobya A S</a>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
 
-    <main>
-      <!-- HERO -->
-      <section id="hero">
-        <div class="hero-inner">
-          <div class="hero-left">
-            <div class="avail-tag">
-              <div class="avail-dot"></div>
-              Open to Internships
-            </div>
-            <h1 class="hero-name">Akshobya<br />A S</h1>
-            <p class="hero-sub">
-              <span>Software Engineer</span> &amp;
-              <span>Ethical Hacking</span> Enthusiast<br />
-              Information Science &amp; Engineering, NIE Mysuru
-            </p>
-            <div class="hero-btns">
-              <a href="#projects" class="btn btn-primary">View Projects</a>
-              <a href="#contact" class="btn btn-outline">Contact Me</a>
-              <a href="resume.pdf" download class="btn btn-outline">Resume</a>
-            </div>
+  <main>
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <div class="avail-tag">
+            <div class="avail-dot"></div>
+            Open to Internships
           </div>
-          <div class="hero-right">
-            <div class="hero-card-wrap">
-              <div class="hero-orb"></div>
-              <div class="hero-ring"></div>
-              <div class="hero-card">
-                <div class="card-avatar">AAS</div>
-                <div class="card-name">Akshobya A S</div>
-                <div class="card-role">ISE Undergrad · NIE Mysuru</div>
-                <div class="card-stats">
-                  <div class="stat">
-                    <div class="stat-val">7.80</div>
-                    <div class="stat-label">CGPA</div>
-                  </div>
-                  <div class="stat">
-                    <div class="stat-val">3</div>
-                    <div class="stat-label">Projects</div>
-                  </div>
-                  <div class="stat">
-                    <div class="stat-val">96%</div>
-                    <div class="stat-label">PUC</div>
-                  </div>
+          <h1 class="hero-name">Akshobya<br />A S</h1>
+          <p class="hero-sub">
+            <span>Full Stack Developer</span> &amp;
+            <span>Software Engineer</span><br />
+            Information Science &amp; Engineering, NIE Mysuru
+          </p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+            <a href="resume.pdf" download class="btn btn-outline">Resume</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="hero-card-wrap">
+            <div class="hero-orb"></div>
+            <div class="hero-ring"></div>
+            <div class="hero-card">
+              <div class="card-avatar">AAS</div>
+              <div class="card-name">Akshobya A S</div>
+              <div class="card-role">ISE Undergrad · NIE Mysuru</div>
+              <div class="card-stats">
+                <div class="stat">
+                  <div class="stat-val">7.60</div>
+                  <div class="stat-label">CGPA</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-val">3</div>
+                  <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-val">96%</div>
+                  <div class="stat-label">PUC</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- SKILLS -->
-      <section id="skills">
-        <div class="sec-header">
-          <div class="sec-tag">What I Know</div>
-          <h2 class="sec-title">Technical <span>Skills</span></h2>
-          <div class="sec-line"></div>
-        </div>
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="sec-header">
+        <div class="sec-tag">What I Know</div>
+        <h2 class="sec-title">Technical <span>Skills</span></h2>
+        <div class="sec-line"></div>
+      </div>
 
-        <div class="skills-grid">
-          <!-- Languages -->
-          <div class="skill-item">
-            <div class="skill-meta">
-              <span class="skill-name">JavaScript</span
-              ><span class="skill-pct">85%</span>
-            </div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar" data-pct="85"></div>
-            </div>
+      <div class="skills-grid">
+        <!-- Languages -->
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span class="skill-name">JavaScript</span><span class="skill-pct">85%</span>
           </div>
-
-          <div class="skill-item">
-            <div class="skill-meta">
-              <span class="skill-name">Python</span
-              ><span class="skill-pct">80%</span>
-            </div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar" data-pct="80"></div>
-            </div>
-          </div>
-
-          <!-- Frontend -->
-          <div class="skill-item">
-            <div class="skill-meta">
-              <span class="skill-name">HTML & CSS</span
-              ><span class="skill-pct">85%</span>
-            </div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar" data-pct="85"></div>
-            </div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-meta">
-              <span class="skill-name">React.js</span
-              ><span class="skill-pct">75%</span>
-            </div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar" data-pct="75"></div>
-            </div>
-          </div>
-
-          <!-- Backend -->
-          <div class="skill-item">
-            <div class="skill-meta">
-              <span class="skill-name">Node.js & Express.js</span
-              ><span class="skill-pct">80%</span>
-            </div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar" data-pct="80"></div>
-            </div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-meta">
-              <span class="skill-name">Django</span
-              ><span class="skill-pct">70%</span>
-            </div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar" data-pct="70"></div>
-            </div>
-          </div>
-
-          <!-- Database -->
-          <div class="skill-item">
-            <div class="skill-meta">
-              <span class="skill-name">MongoDB</span
-              ><span class="skill-pct">75%</span>
-            </div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar" data-pct="75"></div>
-            </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar" data-pct="85"></div>
           </div>
         </div>
-        <div class="chips-wrap">
-          <div class="chip">JavaScript</div>
-          <div class="chip">Python</div>
-          <div class="chip">HTML</div>
-          <div class="chip">CSS</div>
-          <div class="chip">React.js</div>
-          <div class="chip">Node.js</div>
-          <div class="chip">Express.js</div>
-          <div class="chip">Django</div>
-          <div class="chip">MongoDB</div>
-          <div class="chip">Git</div>
-          <div class="chip">Docker</div>
-          <div class="chip">Postman</div>
-        </div>
-      </section>
-
-      <!-- PROJECTS -->
-      <section id="projects">
-        <div class="sec-header">
-          <div class="sec-tag">What I've Built</div>
-          <h2 class="sec-title">Featured <span>Projects</span></h2>
-          <div class="sec-line"></div>
-        </div>
-        <div class="projects-grid">
-          <div class="project-card">
-            <span class="proj-emoji">🚗</span>
-            <div class="proj-name">Ecoride – Car Pooling App</div>
-            <div class="proj-desc">
-              Full-stack car-pooling platform enabling users to create, search,
-              and join rides. Built with secure authentication and REST APIs,
-              featuring responsive UI and complete booking flows.
-            </div>
-            <div class="proj-tags">
-              <span class="proj-tag">Node.js</span>
-              <span class="proj-tag">Express</span>
-              <span class="proj-tag">React</span>
-              <span class="proj-tag">TypeScript</span>
-              <span class="proj-tag">REST API</span>
-            </div>
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span class="skill-name">Python</span><span class="skill-pct">80%</span>
           </div>
-
-          <div class="project-card">
-            <span class="proj-emoji">🧬</span>
-            <div class="proj-name">Timetable Scheduler</div>
-            <div class="proj-desc">
-              Genetic Algorithm-based timetable generator in Python that
-              minimizes scheduling conflicts. Implements fitness evaluation,
-              selection, crossover, and mutation for automated scheduling.
-            </div>
-            <div class="proj-tags">
-              <span class="proj-tag">Python</span>
-              <span class="proj-tag">Genetic Algorithm</span>
-              <span class="proj-tag">Optimization</span>
-              <span class="proj-tag">Automation</span>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <span class="proj-emoji">🎫</span>
-            <div class="proj-name">Bus Ticket Reservation System</div>
-            <div class="proj-desc">
-              Database-driven bus ticket reservation system with seat allocation
-              and cancellation management. Designed entity-relationship models
-              and implemented backend logic.
-            </div>
-            <div class="proj-tags">
-              <span class="proj-tag">MySQL</span>
-              <span class="proj-tag">Java</span>
-              <span class="proj-tag">DBMS</span>
-              <span class="proj-tag">Database Design</span>
-            </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar" data-pct="80"></div>
           </div>
         </div>
-      </section>
-
-      <!-- EDUCATION -->
-      <section id="education">
-        <div class="sec-header">
-          <div class="sec-tag">Academic Journey</div>
-          <h2 class="sec-title">My <span>Education</span></h2>
-          <div class="sec-line"></div>
-        </div>
-        <div class="edu-wrap">
-          <div class="edu-card">
-            <div class="edu-icon">
-              <img src="images/nie.png" alt="NIE" width="40" height="40" />
-            </div>
-            <div class="edu-body">
-              <h3>
-                Bachelor of Engineering – Information Science &amp; Engineering
-              </h3>
-              <a
-                href="https://nie.ac.in/"
-                target="_blank"
-                rel="noopener"
-                class="edu-inst"
-              >
-                The National Institute of Engineering, Mysuru
-              </a>
-              <div class="edu-meta">
-                <span class="edu-badge">Expected 2027</span>
-                <span class="edu-badge edu-badge-highlight">CGPA: 7.80</span>
-              </div>
-            </div>
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span class="skill-name">Java</span><span class="skill-pct">75%</span>
           </div>
-
-          <div class="edu-card">
-            <div class="edu-icon">
-              <img
-                src="images/cef.png"
-                alt="Creative PU College"
-                width="35"
-                height="35"
-              />
-            </div>
-            <div class="edu-body">
-              <h3>
-                Pre-University – PCMC (Physics, Chemistry, Mathematics, Computer
-                Science)
-              </h3>
-              <a
-                href="https://creativeedu.in/"
-                target="_blank"
-                rel="noopener"
-                class="edu-inst"
-              >
-                Creative PU College, Karkala
-              </a>
-              <div class="edu-meta">
-                <span class="edu-badge">2023</span>
-                <span class="edu-badge edu-badge-highlight">96.33%</span>
-              </div>
-            </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar" data-pct="75"></div>
           </div>
         </div>
-      </section>
-
-      <!-- CONTACT -->
-      <section id="contact">
-        <div class="sec-header">
-          <div class="sec-tag">Get In Touch</div>
-          <h2 class="sec-title">Let's <span>Connect</span></h2>
-          <div class="sec-line"></div>
+        <!-- Frontend -->
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span class="skill-name">React.js</span><span class="skill-pct">80%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar" data-pct="80"></div>
+          </div>
         </div>
-        <div class="contact-inner">
-          <p>
-            I'm actively seeking internship opportunities in software
-            engineering and full stack development. Feel free to reach out — I'd
-            love to chat!
-          </p>
-          <div class="contact-cards">
-            <a href="mailto:asakshobya@gmail.com" class="contact-card">
-              <span class="contact-card-icon"
-                ><img src="images/gmail.svg" alt="Email" width="24" height="24"
-              /></span>
-              asakshobya@gmail.com
+        <!-- Backend -->
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span class="skill-name">Node.js &amp; Express.js</span><span class="skill-pct">80%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar" data-pct="80"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span class="skill-name">Django</span><span class="skill-pct">75%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar" data-pct="75"></div>
+          </div>
+        </div>
+        <!-- Database -->
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span class="skill-name">MongoDB</span><span class="skill-pct">75%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar" data-pct="75"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span class="skill-name">MySQL</span><span class="skill-pct">75%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar" data-pct="75"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chips-wrap">
+        <!-- Languages -->
+        <div class="chip">JavaScript</div>
+        <div class="chip">Python</div>
+        <div class="chip">Java</div>
+        <!-- MERN -->
+        <div class="chip">MongoDB</div>
+        <div class="chip">Express.js</div>
+        <div class="chip">React.js</div>
+        <div class="chip">Node.js</div>
+        <!-- Backend -->
+        <div class="chip">Django</div>
+        <div class="chip">MySQL</div>
+        <!-- Tools -->
+        <div class="chip">Git</div>
+        <div class="chip">Docker</div>
+        <div class="chip">Postman</div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="sec-header">
+        <div class="sec-tag">What I've Built</div>
+        <h2 class="sec-title">Featured <span>Projects</span></h2>
+        <div class="sec-line"></div>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <span class="proj-emoji">🚗</span>
+          <div class="proj-name">Ecoride – Car Pooling App</div>
+          <div class="proj-desc">
+            Full-stack ride-sharing platform with secure authentication and RESTful APIs.
+            Implemented backend workflows for ride management, booking logic, and efficient
+            database handling.
+          </div>
+          <div class="proj-tags">
+            <span class="proj-tag">Node.js</span>
+            <span class="proj-tag">Express</span>
+            <span class="proj-tag">React</span>
+            <span class="proj-tag">TypeScript</span>
+            <span class="proj-tag">REST API</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <span class="proj-emoji">🧬</span>
+          <div class="proj-name">Timetable Scheduler</div>
+          <div class="proj-desc">
+            Genetic Algorithm-based timetable generator in Python that minimizes scheduling
+            conflicts. Designed fitness, selection, crossover, and mutation strategies to
+            optimize constraint satisfaction.
+          </div>
+          <div class="proj-tags">
+            <span class="proj-tag">Python</span>
+            <span class="proj-tag">Genetic Algorithm</span>
+            <span class="proj-tag">Optimization</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <span class="proj-emoji">🎫</span>
+          <div class="proj-name">Bus Ticket Reservation System</div>
+          <div class="proj-desc">
+            Relational database system for seat allocation, booking, and cancellation
+            workflows. Designed ER models and implemented backend logic with MySQL and Java.
+          </div>
+          <div class="proj-tags">
+            <span class="proj-tag">MySQL</span>
+            <span class="proj-tag">Java</span>
+            <span class="proj-tag">DBMS</span>
+            <span class="proj-tag">Database Design</span>
+          </div>
+        </div>
+
+        <a href="https://github.com/akshobyaas/ishms" target="_blank" rel="noopener" class="project-card" style="display:flex;flex-direction:column;text-decoration:none;cursor:pointer;">
+          <span class="proj-emoji">🖥️</span>
+          <div class="proj-name">ISHMS – Intelligent System Health Monitor</div>
+          <div class="proj-desc">
+            Real-time system telemetry and anomaly detection platform. Monitors CPU,
+            memory, temperature, and power draw every 2 seconds, using a
+            RandomForestClassifier to detect anomalies and diagnose root causes like
+            memory leaks, CPU instability, and thermal spikes.
+          </div>
+          <div class="proj-tags">
+            <span class="proj-tag">Django</span>
+            <span class="proj-tag">Python</span>
+            <span class="proj-tag">scikit-learn</span>
+            <span class="proj-tag">REST API</span>
+            <span class="proj-tag">Chart.js</span>
+          </div>
+
+        </a>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <div class="sec-header">
+        <div class="sec-tag">Academic Journey</div>
+        <h2 class="sec-title">My <span>Education</span></h2>
+        <div class="sec-line"></div>
+      </div>
+      <div class="edu-wrap">
+        <div class="edu-card">
+          <div class="edu-icon">
+            <img src="images/nie.png" alt="NIE" width="40" height="40" />
+          </div>
+          <div class="edu-body">
+            <h3>Bachelor of Engineering – Information Science &amp; Engineering</h3>
+            <a href="https://nie.ac.in/" target="_blank" rel="noopener" class="edu-inst">
+              The National Institute of Engineering, Mysuru
             </a>
-            <a href="tel:+916366594660" class="contact-card">
-              <span class="contact-card-icon">📞</span> +91 63665 94660
-            </a>
-            <a
-              href="https://github.com/akshobyaas"
-              target="_blank"
-              rel="noopener"
-              class="contact-card"
-            >
-              <span class="contact-card-icon"
-                ><img
-                  src="images/github_dark.svg"
-                  alt="GitHub"
-                  width="24"
-                  height="24"
-              /></span>
-              GitHub
-            </a>
-            <a
-              href="https://linkedin.com/in/akshobyaas"
-              target="_blank"
-              rel="noopener"
-              class="contact-card"
-            >
-              <span class="contact-card-icon"
-                ><img
-                  src="images/linkedin.svg"
-                  alt="LinkedIn"
-                  width="24"
-                  height="24"
-              /></span>
-              LinkedIn
-            </a>
+            <div class="edu-meta">
+              <span class="edu-badge">Expected 2027</span>
+              <span class="edu-badge edu-badge-highlight">CGPA: 7.60</span>
+            </div>
           </div>
-          <a
-            href="https://wa.me/916366594660"
-            target="_blank"
-            rel="noopener"
-            class="btn btn-primary"
-          >
-            Say Hello 👋
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-icon">
+            <img src="images/cef.png" alt="Creative PU College" width="35" height="35" />
+          </div>
+          <div class="edu-body">
+            <h3>Pre-University – PCMC (Physics, Chemistry, Mathematics, Computer Science)</h3>
+            <a href="https://creativeedu.in/" target="_blank" rel="noopener" class="edu-inst">
+              Creative PU College, Karkala
+            </a>
+            <div class="edu-meta">
+              <span class="edu-badge">2023</span>
+              <span class="edu-badge edu-badge-highlight">96.33%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="sec-header">
+        <div class="sec-tag">Get In Touch</div>
+        <h2 class="sec-title">Let's <span>Connect</span></h2>
+        <div class="sec-line"></div>
+      </div>
+      <div class="contact-inner">
+        <p>
+          I'm actively seeking internship opportunities in software engineering and full stack
+          development. Feel free to reach out — I'd love to chat!
+        </p>
+        <div class="contact-cards">
+          <a href="mailto:asakshobya@gmail.com" class="contact-card">
+            <span class="contact-card-icon"><img src="images/gmail.svg" alt="Email" width="24" height="24" /></span>
+            asakshobya@gmail.com
+          </a>
+          <a href="tel:+916366594660" class="contact-card">
+            <span class="contact-card-icon">📞</span> +91 63665 94660
+          </a>
+          <a href="https://github.com/akshobyaas" target="_blank" rel="noopener" class="contact-card">
+            <span class="contact-card-icon"><img src="images/github_dark.svg" alt="GitHub" width="24"
+                height="24" /></span>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/akshobyaas" target="_blank" rel="noopener" class="contact-card">
+            <span class="contact-card-icon"><img src="images/linkedin.svg" alt="LinkedIn" width="24"
+                height="24" /></span>
+            LinkedIn
           </a>
         </div>
-      </section>
-    </main>
+        <a href="https://wa.me/916366594660" target="_blank" rel="noopener" class="btn btn-primary">
+          Say Hello 👋
+        </a>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-      <p>
-        Designed &amp; Built by <span>Akshobya A S</span> · Chikkamagaluru,
-        Karnataka · 2025
-      </p>
-    </footer>
+  <footer>
+    <p>
+      Designed &amp; Built by <span>Akshobya A S</span> · Chikkamagaluru, Karnataka · <span id="footer-year"></span>
+    </p>
+  </footer>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
 </html>
