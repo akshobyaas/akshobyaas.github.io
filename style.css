@@ -400,9 +400,9 @@ section {
 #skills { background: var(--bg2); }
 
 .skills-wrap {
-  max-width: 960px; margin: 0 auto; width: 100%;
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: clamp(0.6rem, 1.2vh, 1rem) clamp(1.5rem, 3vw, 3rem);
+  max-width: 760px; margin: 0 auto; width: 100%;
+  display: flex; flex-direction: column;
+  gap: clamp(0.9rem, 1.6vh, 1.4rem);
 }
 
 .skill-item {
@@ -439,7 +439,7 @@ section {
 .chips-wrap {
   margin-top: clamp(1.2rem, 2.5vh, 2rem);
   display: flex; flex-wrap: wrap; gap: 0.45rem;
-  max-width: 960px; margin-left: auto; margin-right: auto;
+  max-width: 760px; margin-left: auto; margin-right: auto;
   justify-content: center;
 }
 .chip {
@@ -656,7 +656,6 @@ footer {
   .hero-right { display: none; }
   .projects-grid { grid-template-columns: 1fr 1fr; }
   .contact-grid { grid-template-columns: 1fr 1fr; }
-  .skills-wrap { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
   .projects-grid { grid-template-columns: 1fr; }
