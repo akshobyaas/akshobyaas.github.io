@@ -412,7 +412,7 @@ section {
 .skill-item.visible { opacity: 1; transform: translateX(0); }
 
 .skill-meta {
-  display: flex; justify-content: space-between; align-items: baseline;
+  display: flex; align-items: baseline;
   margin-bottom: 0.45rem;
 }
 .skill-name {
@@ -420,10 +420,7 @@ section {
   font-size: clamp(0.8rem, 1.1vw, 0.92rem);
   letter-spacing: 0.06em; color: var(--white);
 }
-.skill-pct {
-  font-family: var(--font-head); font-size: 0.72rem;
-  color: var(--red-light); letter-spacing: 0.08em;
-}
+.skill-pct { display: none; }
 .skill-bar-bg {
   height: 4px; background: rgba(255,255,255,0.07);
   border-radius: 2px; overflow: hidden;
