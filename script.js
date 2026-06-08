@@ -105,18 +105,16 @@ if (!isTouch) {
   canvas.style.display = 'none';
 }
 
-/* ===== INTERSECTION OBSERVER – skill bars (fix #10: unobserve after firing) ===== */
-const skillObs = new IntersectionObserver((entries) => {
-  entries.forEach(en => {
+/* ===== INTERSECTION OBSERVER – stack cards ===== */
+const stackObs = new IntersectionObserver((entries) => {
+  entries.forEach((en, i) => {
     if (en.isIntersecting) {
-      en.target.classList.add('visible');
-      const bar = en.target.querySelector('.skill-bar');
-      if (bar) setTimeout(() => { bar.style.width = bar.dataset.pct + '%'; }, 200);
-      skillObs.unobserve(en.target);
+      setTimeout(() => en.target.classList.add('visible'), i * 80);
+      stackObs.unobserve(en.target);
     }
   });
-}, { threshold: 0.2 });
-document.querySelectorAll('.skill-item').forEach(el => skillObs.observe(el));
+}, { threshold: 0.1 });
+document.querySelectorAll('.stack-card').forEach(el => stackObs.observe(el));
 
 /* ===== INTERSECTION OBSERVER – project cards ===== */
 const cardObs = new IntersectionObserver((entries) => {
