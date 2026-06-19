@@ -177,3 +177,59 @@ if (hamburger && navLinks) {
     }
   });
 }
+/* ===== WHATSAPP LINK OBFUSCATION ===== */
+document.querySelectorAll('.wa-link').forEach(el => {
+  el.addEventListener('click', e => {
+    e.preventDefault();
+    const num = el.dataset.wa;
+    if (num) window.open('https://wa.me/' + num, '_blank', 'noopener');
+  });
+});
+
+/* ===== COOKIE CONSENT (Microsoft Clarity) ===== */
+(function () {
+  const STORAGE_KEY = 'clarity_consent';
+  const banner = document.getElementById('cookie-banner');
+  const acceptBtn = document.getElementById('cookie-accept');
+  const declineBtn = document.getElementById('cookie-decline');
+
+  function applyConsent(granted) {
+    if (typeof clarity === 'function') {
+      if (granted) {
+        clarity('consent');
+      } else {
+        clarity('stop');
+      }
+    }
+  }
+
+  function hideBanner() {
+    if (banner) banner.classList.add('hidden');
+  }
+
+  // If already decided, apply immediately and hide banner
+  const stored = localStorage.getItem(STORAGE_KEY);
+  if (stored !== null) {
+    applyConsent(stored === 'granted');
+    hideBanner();
+  } else {
+    // Default: stop Clarity until user consents (GDPR-safe default)
+    applyConsent(false);
+  }
+
+  if (acceptBtn) {
+    acceptBtn.addEventListener('click', () => {
+      localStorage.setItem(STORAGE_KEY, 'granted');
+      applyConsent(true);
+      hideBanner();
+    });
+  }
+
+  if (declineBtn) {
+    declineBtn.addEventListener('click', () => {
+      localStorage.setItem(STORAGE_KEY, 'denied');
+      applyConsent(false);
+      hideBanner();
+    });
+  }
+})();
