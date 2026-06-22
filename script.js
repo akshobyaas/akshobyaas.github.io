@@ -127,6 +127,34 @@ const cardObs = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 document.querySelectorAll('.project-card').forEach(el => cardObs.observe(el));
 
+/* ===== STICKY CARD STACK – scale effect ===== */
+(function () {
+  const cards = Array.from(document.querySelectorAll('.project-card'));
+  const SCALE_MIN = 0.92;
+  const STICKY_TOP = 80;
+
+  function updateCardScales() {
+    cards.forEach((card, i) => {
+      const rect = card.getBoundingClientRect();
+      const distFromTop = rect.top - STICKY_TOP;
+
+      if (distFromTop <= 0) {
+        const nextCards = cards.slice(i + 1);
+        const covering = nextCards.filter(c => c.getBoundingClientRect().top - STICKY_TOP <= 0).length;
+        const scale = Math.max(SCALE_MIN, 1 - covering * 0.03);
+        card.style.scale = scale;
+        card.style.opacity = Math.max(0.55, scale);
+      } else {
+        card.style.scale = 1;
+        card.style.opacity = card.classList.contains('visible') ? 1 : 0;
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateCardScales, { passive: true });
+  updateCardScales();
+})();
+
 /* ===== INTERSECTION OBSERVER – timeline items ===== */
 const timelineObs = new IntersectionObserver((entries) => {
   entries.forEach((en, i) => {

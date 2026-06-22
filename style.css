@@ -427,26 +427,34 @@ section {
 /* ===== PROJECTS ===== */
 #projects { background: var(--bg); }
 .projects-grid {
-  max-width: 1100px; margin: 0 auto; width: 100%;
-  display: grid; grid-template-columns: repeat(2,1fr); gap: clamp(0.75rem, 1.5vh, 1.5rem);
+  max-width: 780px; margin: 0 auto; width: 100%;
+  position: relative;
+  padding-bottom: 40vh;
 }
 a.project-card { color: inherit; text-decoration: none; }
 .project-card {
-  background: rgba(255,255,255,0.02);
+  background: #0d0d0d;
   border: 1px solid rgba(255,255,255,0.07);
   border-left: 3px solid var(--red-deep);
-  border-radius: 6px; padding: clamp(1rem, 1.8vh, 2rem) clamp(1rem, 1.5vw, 2rem);
-  position: relative; overflow: hidden;
-  transition: all 0.4s ease;
-  opacity: 0; transform: translateY(30px);
+  border-radius: 8px; padding: clamp(1.2rem, 2vh, 2rem) clamp(1.2rem, 2vw, 2.5rem);
+  position: sticky;
+  top: 80px;
   display: flex; flex-direction: column;
+  margin-bottom: 1.5rem;
+  opacity: 0; transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease, border-left-color 0.3s ease, background 0.3s ease;
+  transform-origin: top center;
+  will-change: transform;
 }
 .project-card.visible { opacity: 1; transform: translateY(0); }
+.project-card:nth-child(1) { z-index: 1; }
+.project-card:nth-child(2) { z-index: 2; }
+.project-card:nth-child(3) { z-index: 3; }
+.project-card:nth-child(4) { z-index: 4; }
+.project-card:nth-child(5) { z-index: 5; }
 .project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.4), var(--glow-red-soft);
   border-left-color: var(--red-light);
-  background: rgba(225,29,44,0.03);
+  background: rgba(225,29,44,0.04);
 }
 .build-num {
   font-family: var(--font-body); font-size: 0.7rem; font-weight: 700;
@@ -624,11 +632,9 @@ footer {
 @media (max-width: 900px) {
   .hero-inner { grid-template-columns: 1fr; }
   .hero-right { display: none; }
-  .projects-grid { grid-template-columns: 1fr 1fr; }
   .contact-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 640px) {
-  .projects-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .nav-links { display: none; }
   .hamburger { display: flex; }
