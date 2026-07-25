@@ -127,36 +127,6 @@ const cardObs = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 document.querySelectorAll('.project-card').forEach(el => cardObs.observe(el));
 
-/* ===== STICKY CARD STACK – scale + fade effect ===== */
-(function () {
-  const cards = Array.from(document.querySelectorAll('.project-card'));
-  const STICKY_TOP = 80;
-  const SCALE_STEP = 0.04;
-  const SCALE_MIN = 0.88;
-
-  function updateCardScales() {
-    // Count how many cards are currently stuck at top
-    const stuck = cards.map(c => c.getBoundingClientRect().top <= STICKY_TOP + 2);
-
-    cards.forEach((card, i) => {
-      if (!card.classList.contains('visible')) return;
-      if (stuck[i]) {
-        // How many cards above this one are also stuck (covering it)
-        const coveredBy = stuck.slice(i + 1).filter(Boolean).length;
-        const scale = Math.max(SCALE_MIN, 1 - coveredBy * SCALE_STEP);
-        card.style.transform = `scale(${scale})`;
-        card.style.opacity = coveredBy > 0 ? Math.max(0.5, scale) : 1;
-      } else {
-        card.style.transform = 'scale(1)';
-        card.style.opacity = 1;
-      }
-    });
-  }
-
-  window.addEventListener('scroll', updateCardScales, { passive: true });
-  updateCardScales();
-})();
-
 /* ===== INTERSECTION OBSERVER – timeline items ===== */
 const timelineObs = new IntersectionObserver((entries) => {
   entries.forEach((en, i) => {
