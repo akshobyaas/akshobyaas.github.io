@@ -138,6 +138,28 @@ const timelineObs = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 document.querySelectorAll('.timeline-item').forEach(el => timelineObs.observe(el));
 
+/* ===== INTERSECTION OBSERVER – section headers ===== */
+const secHeaderObs = new IntersectionObserver((entries) => {
+  entries.forEach((en) => {
+    if (en.isIntersecting) {
+      en.target.classList.add('visible');
+      secHeaderObs.unobserve(en.target);
+    }
+  });
+}, { threshold: 0.3 });
+document.querySelectorAll('.sec-header').forEach(el => secHeaderObs.observe(el));
+
+/* ===== INTERSECTION OBSERVER – contact cards ===== */
+const contactObs = new IntersectionObserver((entries) => {
+  entries.forEach((en, i) => {
+    if (en.isIntersecting) {
+      setTimeout(() => en.target.classList.add('visible'), i * 100);
+      contactObs.unobserve(en.target);
+    }
+  });
+}, { threshold: 0.2 });
+document.querySelectorAll('.contact-card').forEach(el => contactObs.observe(el));
+
 /* ===== HAMBURGER MENU — class-based toggle (fix #1) ===== */
 const hamburger = document.getElementById('hamburger');
 const navLinks  = document.getElementById('navLinks');
@@ -177,6 +199,57 @@ if (hamburger && navLinks) {
     }
   });
 }
+/* ===== SCROLL PROGRESS BAR ===== */
+(function () {
+  const bar = document.getElementById('scroll-progress');
+  if (!bar) return;
+  let ticking = false;
+
+  function updateProgress() {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    bar.style.width = Math.min(100, Math.max(0, pct)) + '%';
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(updateProgress);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  updateProgress();
+})();
+
+/* ===== NAV ACTIVE-SECTION INDICATOR ===== */
+(function () {
+  const navAnchors = Array.from(document.querySelectorAll('.nav-links a[href^="#"]'))
+    .filter(a => a.getAttribute('href').length > 1);
+  if (!navAnchors.length) return;
+
+  const linkBySection = new Map();
+  navAnchors.forEach(a => {
+    const id = a.getAttribute('href').slice(1);
+    const section = document.getElementById(id);
+    if (section) linkBySection.set(section, a);
+  });
+
+  const navSectionObs = new IntersectionObserver((entries) => {
+    entries.forEach((en) => {
+      const link = linkBySection.get(en.target);
+      if (!link) return;
+      if (en.isIntersecting) {
+        navAnchors.forEach(a => a.classList.remove('active'));
+        link.classList.add('active');
+      }
+    });
+  }, { threshold: 0.4, rootMargin: '-80px 0px -40% 0px' });
+
+  linkBySection.forEach((_, section) => navSectionObs.observe(section));
+})();
+
 /* ===== WHATSAPP LINK OBFUSCATION ===== */
 document.querySelectorAll('.wa-link').forEach(el => {
   el.addEventListener('click', e => {
