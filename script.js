@@ -1,22 +1,31 @@
-/* ===== LOADER with percentage counter ===== */
-window.addEventListener('load', () => {
+/* ===== LOADER — short, skipped on repeat visits and for reduced motion ===== */
+(function () {
+  const loader = document.getElementById('loader');
   const pct = document.getElementById('loader-pct');
-  let count = 0;
-  const interval = setInterval(() => {
-    count += Math.floor(Math.random() * 8) + 3;
-    if (count >= 100) { count = 100; clearInterval(interval); }
-    if (pct) pct.textContent = count + '%';
-  }, 60);
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let seen = false;
+  try { seen = sessionStorage.getItem('loader_seen') === '1'; sessionStorage.setItem('loader_seen', '1'); } catch (e) {}
 
-  setTimeout(() => {
-    document.getElementById('loader').classList.add('hidden');
-    // Animate RPM bar after loader
+  function startRpm() {
     setTimeout(() => {
       const rpmBar = document.getElementById('rpm-bar');
       if (rpmBar) rpmBar.style.width = '86%';
-    }, 400);
-  }, 2100);
-});
+    }, 300);
+  }
+
+  if (!loader) { startRpm(); return; }
+  if (reduce || seen) { loader.classList.add('hidden'); startRpm(); return; }
+
+  const DURATION = 900; // was 2100ms after full page load; don't make recruiters wait
+  const t0 = performance.now();
+  (function tick(now) {
+    const p = Math.min(100, Math.round(((now - t0) / DURATION) * 100));
+    if (pct) pct.textContent = p + '%';
+    if (p < 100) requestAnimationFrame(tick);
+  })(t0);
+
+  setTimeout(() => { loader.classList.add('hidden'); startRpm(); }, DURATION);
+})();
 
 /* ===== CUSTOM CURSOR — pointer devices only (fix #2) ===== */
 if (window.matchMedia('(pointer: fine)').matches) {
@@ -259,50 +268,36 @@ document.querySelectorAll('.wa-link').forEach(el => {
   });
 });
 
-/* ===== COOKIE CONSENT (Microsoft Clarity) ===== */
+/* ===== COOKIE CONSENT (Microsoft Clarity) =====
+   Clarity is only loaded after the visitor accepts, so nothing is tracked before consent. */
 (function () {
   const STORAGE_KEY = 'clarity_consent';
+  const CLARITY_ID = 'x92de1m5vc';
   const banner = document.getElementById('cookie-banner');
   const acceptBtn = document.getElementById('cookie-accept');
   const declineBtn = document.getElementById('cookie-decline');
 
-  function applyConsent(granted) {
-    if (typeof clarity === 'function') {
-      if (granted) {
-        clarity('consent');
-      } else {
-        clarity('stop');
-      }
-    }
+  function getStored() { try { return localStorage.getItem(STORAGE_KEY); } catch (e) { return null; } }
+  function setStored(v) { try { localStorage.setItem(STORAGE_KEY, v); } catch (e) {} }
+
+  function loadClarity() {
+    if (window.clarity) return;
+    (function (c, l, a, r, i, t, y) {
+      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+      t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i;
+      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+    })(window, document, 'clarity', 'script', CLARITY_ID);
+    window.clarity('consent');
   }
 
-  function hideBanner() {
-    if (banner) banner.classList.add('hidden');
-  }
+  function hideBanner() { if (banner) banner.classList.add('hidden'); }
 
-  // If already decided, apply immediately and hide banner
-  const stored = localStorage.getItem(STORAGE_KEY);
+  const stored = getStored();
   if (stored !== null) {
-    applyConsent(stored === 'granted');
+    if (stored === 'granted') loadClarity();
     hideBanner();
-  } else {
-    // Default: stop Clarity until user consents (GDPR-safe default)
-    applyConsent(false);
   }
 
-  if (acceptBtn) {
-    acceptBtn.addEventListener('click', () => {
-      localStorage.setItem(STORAGE_KEY, 'granted');
-      applyConsent(true);
-      hideBanner();
-    });
-  }
-
-  if (declineBtn) {
-    declineBtn.addEventListener('click', () => {
-      localStorage.setItem(STORAGE_KEY, 'denied');
-      applyConsent(false);
-      hideBanner();
-    });
-  }
+  if (acceptBtn) acceptBtn.addEventListener('click', () => { setStored('granted'); loadClarity(); hideBanner(); });
+  if (declineBtn) declineBtn.addEventListener('click', () => { setStored('denied'); hideBanner(); });
 })();

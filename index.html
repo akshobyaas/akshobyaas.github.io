@@ -12,7 +12,7 @@
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.clarity.ms; style-src 'self' https://fonts.googleapis.com https://db.onlinewebfonts.com; font-src 'self' https://fonts.gstatic.com https://db.onlinewebfonts.com; img-src 'self' data:; connect-src 'self' https://www.clarity.ms https://*.clarity.ms; object-src 'none'; base-uri 'self';"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://*.clarity.ms; style-src 'self' https://fonts.googleapis.com https://db.onlinewebfonts.com; font-src 'self' https://fonts.gstatic.com https://db.onlinewebfonts.com; img-src 'self' data: https://*.clarity.ms https://c.bing.com; connect-src 'self' https://*.clarity.ms https://c.bing.com; object-src 'none'; base-uri 'self';"
     />
     <!-- Favicon: inline SVG data URI -->
     <link
@@ -49,30 +49,23 @@
       property="og:image"
       content="https://akshobyaas.github.io/og-image.png"
     />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <meta property="og:image:width" content="2400" />
+    <meta property="og:image:height" content="1260" />
     <meta
       property="og:title"
-      content="Akshobya A S — Full Stack & AI Engineer"
+      content="Akshobya A S — Full Stack &amp; AI Engineer"
     />
     <meta
       property="og:description"
-      content="Portfolio of Akshobya A S, Full Stack & AI Engineer at NIE Mysuru."
+      content="Portfolio of Akshobya A S, Full Stack &amp; AI Engineer and ISE undergrad at NIE Mysuru."
     />
-    <meta property="og:url" content="https://akshobyaas.github.io" />
+    <meta property="og:url" content="https://akshobyaas.github.io/" />
     <meta property="og:type" content="website" />
     <!-- Twitter / X card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Akshobya A S — Full Stack &amp; AI Engineer" />
-    <meta name="twitter:description" content="Portfolio of Akshobya A S, Full Stack &amp; AI Engineer at NIE Mysuru. Building AI-powered web apps with RAG, LLMs, and the MERN stack." />
+    <meta name="twitter:description" content="Portfolio of Akshobya A S, Full Stack &amp; AI Engineer and ISE undergrad at NIE Mysuru. Building AI-powered web apps with RAG, LLMs, and the MERN stack." />
     <meta name="twitter:image" content="https://akshobyaas.github.io/og-image.png" />
-    <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "x92de1m5vc");
-</script>
   </head>
   <body>
     <div id="scroll-progress"></div>
@@ -130,7 +123,7 @@
             <div class="hero-btns">
               <a href="#projects" class="btn btn-primary">View Projects</a>
               <a href="#contact" class="btn btn-outline">Get In Touch</a>
-              <a href="resume.pdf" download class="btn btn-ghost">Resume</a>
+              <a href="resume.pdf" download="Akshobya_A_S_Resume.pdf" class="btn btn-ghost">Resume</a>
             </div>
             <div class="rpm-wrap">
               <div class="rpm-header">
@@ -156,7 +149,7 @@
               <div class="telemetry-grid">
                 <div class="telem-block">
                   <div class="telem-label">PROJECTS</div>
-                  <div class="telem-val">06</div>
+                  <div class="telem-val">08</div>
                 </div>
                 <div class="telem-block">
                   <div class="telem-label">STACK</div>
@@ -280,6 +273,10 @@
                     /></svg
                 ></span>
                 <span class="pill-name">CSS</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-icon"><svg viewBox="0 0 24 24" fill="#38BDF8" xmlns="http://www.w3.org/2000/svg"><path d="M12 6c-2.67 0-4.33 1.33-5 4 1-1.33 2.17-1.83 3.5-1.5.76.19 1.31.74 1.91 1.35.98 1 2.12 2.15 4.59 2.15 2.67 0 4.33-1.33 5-4-1 1.33-2.17 1.83-3.5 1.5-.76-.19-1.31-.74-1.91-1.35C15.61 7.15 14.47 6 12 6zm-5 6c-2.67 0-4.33 1.33-5 4 1-1.33 2.17-1.83 3.5-1.5.76.19 1.31.74 1.91 1.35C8.39 16.85 9.53 18 12 18c2.67 0 4.33-1.33 5-4-1 1.33-2.17 1.83-3.5 1.5-.76-.19-1.31-.74-1.91-1.35C10.61 13.15 9.47 12 7 12z"/></svg></span>
+                <span class="pill-name">Tailwind CSS</span>
               </div>
               <div class="skill-pill">
                 <span class="pill-icon"
@@ -408,29 +405,8 @@
                 <span class="pill-name">SQLite</span>
               </div>
               <div class="skill-pill">
-                <span class="pill-icon"
-                  ><svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle
-                      cx="12"
-                      cy="12"
-                      r="9"
-                      stroke="#E57373"
-                      stroke-width="1.5"
-                    />
-                    <circle
-                      cx="12"
-                      cy="12"
-                      r="5"
-                      stroke="#E57373"
-                      stroke-width="1.5"
-                    />
-                    <circle cx="12" cy="12" r="2" fill="#E57373" /></svg
-                ></span>
-                <span class="pill-name">ChromaDB</span>
+                <span class="pill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#4169E1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/></svg></span>
+                <span class="pill-name">PostgreSQL</span>
               </div>
             </div>
           </div>
@@ -454,7 +430,7 @@
                       d="M22.28 9.79a5.53 5.53 0 00-.47-4.55 5.6 5.6 0 00-6.03-2.68A5.55 5.55 0 0011.7 1a5.6 5.6 0 00-5.34 3.88 5.55 5.55 0 00-3.7 2.7 5.6 5.6 0 00.69 6.56 5.55 5.55 0 00.47 4.55 5.6 5.6 0 006.03 2.68A5.55 5.55 0 0012.3 23a5.6 5.6 0 005.35-3.88 5.55 5.55 0 003.7-2.7 5.6 5.6 0 00-.69-6.57l-.38.14zM12.3 21.5a4.1 4.1 0 01-2.64-.96l.13-.07 4.38-2.53a.73.73 0 00.37-.63v-6.18l1.85 1.07a.07.07 0 01.04.05v5.1a4.14 4.14 0 01-4.13 4.15zM3.9 17.6a4.1 4.1 0 01-.49-2.77l.13.08 4.38 2.53c.23.13.5.13.73 0l5.35-3.09v2.14a.07.07 0 01-.03.06L9.5 18.9A4.14 4.14 0 013.9 17.6zm-1.07-9.5a4.1 4.1 0 012.14-1.8v5.2a.72.72 0 00.37.63l5.35 3.09-1.85 1.07a.07.07 0 01-.07 0L4.4 13.9a4.14 4.14 0 01-.57-5.8zm15.24 3.56L12.7 8.57l1.85-1.07a.07.07 0 01.07 0l4.42 2.55a4.13 4.13 0 01-.64 7.44v-5.2a.72.72 0 00-.33-.63zm1.84-2.79l-.13-.08-4.38-2.52a.73.73 0 00-.73 0L9.32 9.36V7.22a.07.07 0 01.03-.06l4.42-2.55a4.13 4.13 0 016.1 4.28v-.02zm-11.6 3.8L6.47 11.6a.07.07 0 01-.04-.06V6.46a4.13 4.13 0 016.77-3.17l-.13.07-4.38 2.53a.72.72 0 00-.37.63l.01 6.18zm1-2.16L12 10.98l1.69.97v1.94L12 14.86l-1.69-.97v-1.94z"
                     /></svg
                 ></span>
-                <span class="pill-name">GPT-4o</span>
+                <span class="pill-name">OpenAI API</span>
               </div>
               <div class="skill-pill">
                 <span class="pill-icon"
@@ -512,6 +488,10 @@
                     /></svg
                 ></span>
                 <span class="pill-name">scikit-learn</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2 3 7v4l6-3.4V22l3 1.7V5.7L15 4z" fill="#FF6F00"/><path d="M12 5.7v18l3-1.7v-6l3 1.7v-3.5l-3-1.7V7.4l6 3.5V7z" fill="#FFA000"/></svg></span>
+                <span class="pill-name">TensorFlow</span>
               </div>
             </div>
           </div>
@@ -719,363 +699,133 @@
           <div class="sec-line"></div>
         </div>
         <div class="projects-grid">
-          <!-- BUILD 01 wrapper -->
+          <!-- BUILD 01 -->
           <div class="project-card-wrap">
           <article class="project-card">
             <div class="proj-card-top">
               <div class="build-num">BUILD // 01</div>
-              <div class="proj-icon" aria-hidden="true">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                  <path d="M2 17l10 5 10-5" />
-                  <path d="M2 12l10 5 10-5" />
-                </svg>
-              </div>
+              <div class="proj-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
             </div>
-            <div class="proj-name">AI Semester Companion</div>
-            <div class="proj-desc">
-              Full-stack AI study platform with RAG-based document retrieval via
-              ChromaDB. Chat over PDFs, DOCX, and PPTX files using GPT-4o and
-              Gemini. Auto-generates quizzes, flashcards, and personalized study
-              plans.
+            <h3 class="proj-name">AI Semester Companion</h3>
+            <p class="proj-desc">Upload a syllabus and notes; get a unit-by-unit study roadmap, AI lessons, adaptive quizzes, SM-2 spaced-repetition flashcards and doubt solving with cited sources. RAG over your own material using local sentence-transformer embeddings and cosine search in MongoDB.</p>
+            <div class="proj-tags"><span class="proj-tag">React</span><span class="proj-tag">Express</span><span class="proj-tag">MongoDB</span><span class="proj-tag">OpenAI</span><span class="proj-tag">RAG</span><span class="proj-tag">Redis</span><span class="proj-tag">Docker</span></div>
+            <div class="proj-links">
+              <a href="https://github.com/akshobyaas/ai-semester-companion" target="_blank" rel="noopener" class="proj-link" aria-label="View AI Semester Companion source on GitHub"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>Code ↗</a>
             </div>
-            <div class="proj-tags">
-              <span class="proj-tag">FastAPI</span
-              ><span class="proj-tag">Next.js 15</span>
-              <span class="proj-tag">GPT-4o</span
-              ><span class="proj-tag">Gemini</span>
-              <span class="proj-tag">ChromaDB</span
-              ><span class="proj-tag">RAG</span>
-            </div>
-            <a
-              href="https://github.com/akshobyaas"
-              target="_blank"
-              rel="noopener"
-              class="proj-link"
-              aria-label="View AI Semester Companion on GitHub"
-            >
-              <svg
-                width="13"
-                height="13"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
-                />
-              </svg>
-              GitHub ↗
-            </a>
           </article>
           </div>
 
-          <!-- BUILD 02 wrapper -->
+          <!-- BUILD 02 -->
           <div class="project-card-wrap">
           <article class="project-card">
             <div class="proj-card-top">
               <div class="build-num">BUILD // 02</div>
-              <div class="proj-icon" aria-hidden="true">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-                </svg>
-              </div>
+              <div class="proj-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></div>
             </div>
-            <div class="proj-name">ISHMS</div>
-            <div class="proj-desc">
-              Intelligent System Health Monitor with real-time telemetry and
-              anomaly detection. Uses RandomForestClassifier to diagnose CPU
-              instability, memory leaks, and thermal spikes via a live Chart.js
-              dashboard.
+            <h3 class="proj-name">Smart Farming System</h3>
+            <p class="proj-desc">B.E. major project (team of 2): leaf-photo crop disease detection with a MobileNetV2 CNN (93.7% test accuracy), weather-driven disease-risk alerts, a crop lifecycle tracker, a farming diary and a Gemini-backed Kannada voice assistant.</p>
+            <div class="proj-tags"><span class="proj-tag">Django</span><span class="proj-tag">React</span><span class="proj-tag">TensorFlow</span><span class="proj-tag">MobileNetV2</span><span class="proj-tag">Gemini</span></div>
+            <div class="proj-links">
+              <a href="https://github.com/akshobyaas/farmmjr" target="_blank" rel="noopener" class="proj-link" aria-label="View Smart Farming System source on GitHub"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>Code ↗</a>
             </div>
-            <div class="proj-tags">
-              <span class="proj-tag">Django</span
-              ><span class="proj-tag">Python</span>
-              <span class="proj-tag">scikit-learn</span
-              ><span class="proj-tag">REST API</span>
-              <span class="proj-tag">Chart.js</span>
-            </div>
-            <a
-              href="https://github.com/akshobyaas/ishms"
-              target="_blank"
-              rel="noopener"
-              class="proj-link"
-              aria-label="View ISHMS on GitHub"
-            >
-              <svg
-                width="13"
-                height="13"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
-                />
-              </svg>
-              GitHub ↗
-            </a>
           </article>
           </div>
 
-          <!-- BUILD 03 wrapper -->
+          <!-- BUILD 03 -->
           <div class="project-card-wrap">
           <article class="project-card">
             <div class="proj-card-top">
               <div class="build-num">BUILD // 03</div>
-              <div class="proj-icon" aria-hidden="true">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <rect x="4" y="4" width="16" height="16" rx="2" />
-                  <rect x="9" y="9" width="6" height="6" />
-                  <line x1="9" y1="1" x2="9" y2="4" />
-                  <line x1="15" y1="1" x2="15" y2="4" />
-                  <line x1="9" y1="20" x2="9" y2="23" />
-                  <line x1="15" y1="20" x2="15" y2="23" />
-                  <line x1="20" y1="9" x2="23" y2="9" />
-                  <line x1="20" y1="14" x2="23" y2="14" />
-                  <line x1="1" y1="9" x2="4" y2="9" />
-                  <line x1="1" y1="14" x2="4" y2="14" />
-                </svg>
-              </div>
+              <div class="proj-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m9 16 2 2 4-4"/></svg></div>
             </div>
-            <div class="proj-name">Timetable Scheduler</div>
-            <div class="proj-desc">
-              Genetic Algorithm-based timetable generator in Python that
-              minimizes scheduling conflicts. Designed fitness, selection,
-              crossover, and mutation strategies to optimize constraint
-              satisfaction.
+            <h3 class="proj-name">Haajari</h3>
+            <p class="proj-desc">Digital attendance for Karnataka government schools, Kannada-first. Offline one-tap marking that syncs without duplicates, parent absence alerts, QR pickup passes for pre-primary, a live headcount dashboard and printable monthly registers.</p>
+            <div class="proj-tags"><span class="proj-tag">MERN</span><span class="proj-tag">PWA</span><span class="proj-tag">Offline Sync</span><span class="proj-tag">i18n</span></div>
+            <div class="proj-links">
+              <a href="https://github.com/akshobyaas/haajari" target="_blank" rel="noopener" class="proj-link" aria-label="View Haajari source on GitHub"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>Code ↗</a>
             </div>
-            <div class="proj-tags">
-              <span class="proj-tag">Python</span
-              ><span class="proj-tag">Genetic Algorithm</span>
-              <span class="proj-tag">Optimization</span>
-            </div>
-            <a
-              href="https://github.com/akshobyaas"
-              target="_blank"
-              rel="noopener"
-              class="proj-link"
-              aria-label="View Timetable Scheduler on GitHub"
-            >
-              <svg
-                width="13"
-                height="13"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
-                />
-              </svg>
-              GitHub
-            </a>
           </article>
           </div>
 
-          <!-- BUILD 04 wrapper -->
+          <!-- BUILD 04 -->
           <div class="project-card-wrap">
           <article class="project-card">
             <div class="proj-card-top">
               <div class="build-num">BUILD // 04</div>
-              <div class="proj-icon" aria-hidden="true">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <ellipse cx="12" cy="5" rx="9" ry="3" />
-                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
-                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
-                </svg>
-              </div>
+              <div class="proj-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg></div>
             </div>
-            <div class="proj-name">Bus Ticket Reservation</div>
-            <div class="proj-desc">
-              Relational database system for seat allocation, booking, and
-              cancellation workflows. Designed ER models and implemented
-              complete backend logic with MySQL and Java.
+            <h3 class="proj-name">Namma Kannada</h3>
+            <p class="proj-desc">Interactive dialect map of Karnataka built for the Kannada Digital Innovation Hackathon 2026: 482 regional words across 21 places, each with its standard form, pronunciation, voice clip, cultural note and source.</p>
+            <div class="proj-tags"><span class="proj-tag">Vanilla JS</span><span class="proj-tag">Vercel</span><span class="proj-tag">Maps</span><span class="proj-tag">Audio</span></div>
+            <div class="proj-links">
+              <a href="https://github.com/akshobyaas/nammakannada-ak" target="_blank" rel="noopener" class="proj-link" aria-label="View Namma Kannada source on GitHub"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>Code ↗</a>
+              <a href="https://nammakannada-ak.vercel.app" target="_blank" rel="noopener" class="proj-link" aria-label="Open live Namma Kannada"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live ↗</a>
             </div>
-            <div class="proj-tags">
-              <span class="proj-tag">MySQL</span
-              ><span class="proj-tag">Java</span>
-              <span class="proj-tag">DBMS</span
-              ><span class="proj-tag">Database Design</span>
-            </div>
-            <a
-              href="https://github.com/akshobyaas"
-              target="_blank"
-              rel="noopener"
-              class="proj-link"
-              aria-label="View Bus Ticket Reservation on GitHub"
-            >
-              <svg
-                width="13"
-                height="13"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
-                />
-              </svg>
-              GitHub
-            </a>
           </article>
           </div>
 
-          <!-- BUILD 05 wrapper -->
+          <!-- BUILD 05 -->
           <div class="project-card-wrap">
           <article class="project-card">
             <div class="proj-card-top">
               <div class="build-num">BUILD // 05</div>
-              <div class="proj-icon" aria-hidden="true">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M3 22V8a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v14" />
-                  <path d="M11 8h6l2 4v10h-8V8z" />
-                  <path d="M6 11h2" />
-                  <path d="M14 11h2" />
-                  <path d="M3 22h18" />
-                </svg>
-              </div>
+              <div class="proj-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 22V8a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v14"/><path d="M11 8h6l2 4v10h-8V8z"/><path d="M6 11h2"/><path d="M14 11h2"/><path d="M3 22h18"/></svg></div>
             </div>
-            <div class="proj-name">PitLog</div>
-            <div class="proj-desc">
-              Full-featured Django PWA for tracking vehicle fuel consumption,
-              mileage efficiency, service records, and documents. Features
-              Chart.js analytics, document expiry alerts, CSV exports,
-              dark/light mode, user profiles, and WCAG 2.1 AA accessibility.
-              Includes a demo data seeder for live walkthroughs.
+            <h3 class="proj-name">PitLog</h3>
+            <p class="proj-desc">Django PWA for tracking vehicle fuel consumption, tank-to-tank mileage, service records and documents. Chart.js analytics, document expiry alerts, CSV exports, dark/light mode and WCAG 2.1 AA accessibility.</p>
+            <div class="proj-tags"><span class="proj-tag">Django</span><span class="proj-tag">PostgreSQL</span><span class="proj-tag">Chart.js</span><span class="proj-tag">PWA</span><span class="proj-tag">S3 Storage</span></div>
+            <div class="proj-links">
+              <a href="https://github.com/akshobyaas/fuel-service-tracker" target="_blank" rel="noopener" class="proj-link" aria-label="View PitLog source on GitHub"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>Code ↗</a>
             </div>
-            <div class="proj-tags">
-              <span class="proj-tag">Django</span
-              ><span class="proj-tag">Python</span>
-              <span class="proj-tag">Chart.js</span
-              ><span class="proj-tag">PWA</span>
-              <span class="proj-tag">PostgreSQL</span
-              ><span class="proj-tag">Backblaze B2</span>
-              <span class="proj-tag">WhiteNoise</span>
-            </div>
-            <a
-              href="https://github.com/akshobyaas/fuel-service-tracker"
-              target="_blank"
-              rel="noopener"
-              class="proj-link"
-              aria-label="View PitLog on GitHub"
-            >
-              <svg
-                width="13"
-                height="13"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
-                />
-              </svg>
-              GitHub ↗
-            </a>
           </article>
           </div>
 
-          <!-- BUILD 06 wrapper -->
-          <div class="project-card-wrap project-card-wrap--last">
+          <!-- BUILD 06 -->
+          <div class="project-card-wrap">
           <article class="project-card">
             <div class="proj-card-top">
               <div class="build-num">BUILD // 06</div>
-              <div class="proj-icon" aria-hidden="true">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <rect x="4" y="11" width="16" height="10" rx="2" />
-                  <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-                </svg>
-              </div>
+              <div class="proj-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
             </div>
-            <div class="proj-name">My Vault</div>
-            <div class="proj-desc">
-              Windows 95-styled personal directory backed by a private Google
-              Sheet, no third-party database. Links mode organizes bookmarks
-              into categories with real-time search; Prompt Vault mode stores
-              AI prompts with version history, one-click copy, and result
-              images uploaded straight to Google Drive.
+            <h3 class="proj-name">ISHMS</h3>
+            <p class="proj-desc">Intelligent System Health Monitor with real-time telemetry and anomaly detection. A RandomForestClassifier flags CPU instability, memory leaks and thermal spikes on a live Chart.js dashboard.</p>
+            <div class="proj-tags"><span class="proj-tag">Django</span><span class="proj-tag">Python</span><span class="proj-tag">scikit-learn</span><span class="proj-tag">REST API</span><span class="proj-tag">Chart.js</span></div>
+            <div class="proj-links">
+              <a href="https://github.com/akshobyaas/ishms" target="_blank" rel="noopener" class="proj-link" aria-label="View ISHMS source on GitHub"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>Code ↗</a>
             </div>
-            <div class="proj-tags">
-              <span class="proj-tag">Vanilla JS</span
-              ><span class="proj-tag">Vercel Serverless</span>
-              <span class="proj-tag">Google Sheets API</span
-              ><span class="proj-tag">Google Drive API</span>
+          </article>
+          </div>
+
+          <!-- BUILD 07 -->
+          <div class="project-card-wrap">
+          <article class="project-card">
+            <div class="proj-card-top">
+              <div class="build-num">BUILD // 07</div>
+              <div class="proj-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 6-6"/></svg></div>
             </div>
-            <a
-              href="https://github.com/akshobyaas/vault"
-              target="_blank"
-              rel="noopener"
-              class="proj-link"
-              aria-label="View My Vault on GitHub"
-            >
-              <svg
-                width="13"
-                height="13"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
-                />
-              </svg>
-              GitHub ↗
-            </a>
+            <h3 class="proj-name">Used Car Price Predictor</h3>
+            <p class="proj-desc">XGBoost regression model trained on the CarDekho dataset and tuned with GridSearchCV, with brand extraction and a log-transformed target. Deployed as a Streamlit app that reports R², MAE and RMSE.</p>
+            <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">XGBoost</span><span class="proj-tag">scikit-learn</span><span class="proj-tag">Streamlit</span></div>
+            <div class="proj-links">
+              <a href="https://github.com/akshobyaas/used-car-price-prediction" target="_blank" rel="noopener" class="proj-link" aria-label="View Used Car Price Predictor source on GitHub"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>Code ↗</a>
+              <a href="https://used-car-price-prediction-ml.streamlit.app/" target="_blank" rel="noopener" class="proj-link" aria-label="Open live Used Car Price Predictor"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live ↗</a>
+            </div>
+          </article>
+          </div>
+
+          <!-- BUILD 08 -->
+          <div class="project-card-wrap">
+          <article class="project-card">
+            <div class="proj-card-top">
+              <div class="build-num">BUILD // 08</div>
+              <div class="proj-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+            </div>
+            <h3 class="proj-name">My Vault</h3>
+            <p class="proj-desc">Windows 95-styled personal directory backed by a private Google Sheet, with no third-party database. Links mode with real-time search; Prompt Vault mode with version history, one-click copy and result images saved to Google Drive.</p>
+            <div class="proj-tags"><span class="proj-tag">Vanilla JS</span><span class="proj-tag">Vercel Serverless</span><span class="proj-tag">Google Sheets API</span><span class="proj-tag">Google Drive API</span></div>
+            <div class="proj-links">
+              <a href="https://github.com/akshobyaas/vault" target="_blank" rel="noopener" class="proj-link" aria-label="View My Vault source on GitHub"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>Code ↗</a>
+            </div>
           </article>
           </div>
         </div>
@@ -1141,8 +891,8 @@
         </div>
         <div class="contact-inner">
           <p class="contact-sub">
-            Actively seeking internship opportunities in software engineering
-            and full stack development.<br />Box box box — let's talk.
+            Looking for software engineering internships in full-stack and
+            applied AI.<br />Box box box — let's talk.
           </p>
           <div class="contact-grid">
             <a
@@ -1244,7 +994,7 @@
           </div>
           <a
             href="resume.pdf"
-            download
+            download="Akshobya_A_S_Resume.pdf"
             class="btn btn-primary contact-resume-btn"
             >Download Resume</a
           >

@@ -1,100 +1,67 @@
-# 🌐 Akshobya A S — Personal Portfolio
+# Akshobya A S — Portfolio
 
 [![Live Site](https://img.shields.io/badge/Live%20Site-akshobyaas.github.io-red?style=for-the-badge&logo=github)](https://akshobyaas.github.io/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-akshobyaas-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/akshobyaas)
 [![GitHub](https://img.shields.io/badge/GitHub-akshobyaas-181717?style=for-the-badge&logo=github)](https://github.com/akshobyaas)
 
-> My personal portfolio website — showcasing my skills, projects, and education as an Information Science & Engineering undergrad at NIE Mysuru.
+Personal portfolio of an Information Science & Engineering undergrad at NIE Mysuru, building full-stack and applied-AI projects.
 
----
+**Live:** [akshobyaas.github.io](https://akshobyaas.github.io/)
 
-## 🚀 Live Demo
+## About the site
 
-👉 **[akshobyaas.github.io](https://akshobyaas.github.io/)**
+A single-page site in plain HTML, CSS and JavaScript with no framework and no build step. The design borrows from Formula 1 telemetry screens: black and red, a rev-counter hero, a "garage builds" project grid and a "race calendar" timeline.
 
----
+- Short loader, skipped on repeat visits and when the visitor prefers reduced motion
+- Custom cursor and particle background on mouse/trackpad devices only
+- Scroll-triggered reveals, scroll progress bar, active-section highlighting in the nav
+- Microsoft Clarity analytics, loaded only after the visitor accepts the cookie banner
+- Content-Security-Policy, Open Graph and Twitter card metadata
 
-## 📋 About
+Fonts: Formula1 Display (headings) and Titillium Web (body).
 
-A personal portfolio built from scratch using vanilla HTML, CSS, and JavaScript. Features a dark black and glossy red theme with smooth animations, a custom cursor, particle background, and scroll-snap sections. Highlights my technical skills, featured projects, academic background, and contact information in a clean, responsive single-page layout.
+## Sections
 
----
+- **Hero**: role, short bio, quick stats
+- **Skills**: frontend, backend, databases, AI/ML, languages, tooling
+- **Projects**: eight builds, each linked to its source code and, where deployed, the live app
+- **Education**: NIE Mysuru and Creative PU College
+- **Contact**: email, GitHub, LinkedIn, WhatsApp, résumé download
 
-## 🎨 Design
+## Projects featured
 
-- **Color Scheme** — Deep black backgrounds with glossy crimson red accents
-- **Typography** — Syne (headings) + DM Sans (body)
-- **Animations** — Loader screen, floating hero card, shimmer gradients, scroll-triggered reveals
-- **Custom Cursor** — Red glowing dot with a ring that follows the mouse
-- **Particle Background** — Subtle animated particles on the hero section
+| Project | Stack | Links |
+|---|---|---|
+| AI Semester Companion | React, Express, MongoDB, OpenAI, RAG, Redis, Docker | [Code](https://github.com/akshobyaas/ai-semester-companion) |
+| Smart Farming System (B.E. major project) | Django, React, TensorFlow/MobileNetV2, Gemini | [Code](https://github.com/akshobyaas/farmmjr) |
+| Haajari | MERN, PWA, offline sync | [Code](https://github.com/akshobyaas/haajari) |
+| Namma Kannada | Vanilla JS, Vercel | [Code](https://github.com/akshobyaas/nammakannada-ak) · [Live](https://nammakannada-ak.vercel.app) |
+| PitLog | Django, PostgreSQL, Chart.js, PWA | [Code](https://github.com/akshobyaas/fuel-service-tracker) |
+| ISHMS | Django, scikit-learn, Chart.js | [Code](https://github.com/akshobyaas/ishms) |
+| Used Car Price Predictor | Python, XGBoost, Streamlit | [Code](https://github.com/akshobyaas/used-car-price-prediction) · [Live](https://used-car-price-prediction-ml.streamlit.app/) |
+| My Vault | Vanilla JS, Vercel, Google Sheets/Drive APIs | [Code](https://github.com/akshobyaas/vault) |
 
----
+## Education
 
-## 🛠️ Built With
+- **B.E. Information Science & Engineering**, The National Institute of Engineering, Mysuru (2023–2027), CGPA 7.60
+- **Pre-University (PCMC)**, Creative PU College, Karkala (2023), 96.33%
 
-| Technology | Purpose |
-|---|---|
-| HTML | Page structure & content |
-| CSS | Styling, layout & animations |
-| JavaScript | Interactivity & dynamic elements |
+## Contact
 
----
+- Email: [asakshobya@gmail.com](mailto:asakshobya@gmail.com)
+- LinkedIn: [akshobyaas](https://linkedin.com/in/akshobyaas)
+- GitHub: [akshobyaas](https://github.com/akshobyaas)
 
-## ✨ Sections
-
-- **Hero** — Introduction, animated name, and call-to-action
-- **Skills** — Technical skills with animated proficiency bars
-- **Projects** — Featured projects with descriptions and tech stacks
-- **Education** — Academic journey (NIE Mysuru & Creative PU College)
-- **Contact** — Links to email, phone, GitHub, LinkedIn & WhatsApp
-
----
-
-## 💼 Featured Projects
-
-### 🚗 Ecoride – Car Pooling App
-Full-stack car-pooling platform enabling users to create, search, and join rides. Built with secure authentication and REST APIs.  
-**Tech:** Node.js · Express · React · TypeScript · REST API
-
-### 🧬 Timetable Scheduler
-Genetic Algorithm-based timetable generator in Python that minimizes scheduling conflicts using fitness evaluation, crossover, and mutation.  
-**Tech:** Python · Genetic Algorithm · Optimization
-
-### 🎫 Bus Ticket Reservation System
-Database-driven bus reservation system with seat allocation and cancellation management.  
-**Tech:** MySQL · Java · DBMS · Database Design
-
----
-
-## 🎓 Education
-
-**B.E. Information Science & Engineering** — The National Institute of Engineering, Mysuru *(Expected 2027)*  
-CGPA: **7.80**
-
-**Pre-University (PCMC)** — Creative PU College, Karkala *(2023)*  
-Score: **96.33%**
-
----
-
-## 📬 Contact
-
-- 📧 [asakshobya@gmail.com](mailto:asakshobya@gmail.com)
-- 📞 [+91 63665 94660](tel:+916366594660)
-- 💬 [WhatsApp](https://wa.me/916366594660)
-- 🔗 [LinkedIn](https://linkedin.com/in/akshobyaas)
-
----
-
-## 📁 Repo Structure
+## Structure
 
 ```
 akshobyaas.github.io/
-├── index.html       # Main HTML file
-├── style.css        # Stylesheet
-├── script.js        # JavaScript for interactivity
-└── images/          # Icons and college logos
+├── index.html     page markup and metadata
+├── style.css      styles, layout, animations
+├── script.js      loader, cursor, particles, reveals, nav, consent
+├── resume.pdf     résumé
+├── og-image.png   social preview image
+└── images/        icons and college logos
 ```
 
----
-
-> *Designed & Built by Akshobya A S · Chikkamagaluru, Karnataka · 2025*
+Designed and built by Akshobya A S, Chikkamagaluru, Karnataka.
