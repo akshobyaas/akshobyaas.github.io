@@ -43,7 +43,7 @@ Fonts: Formula1 Display (headings) and Titillium Web (body).
 
 ## Education
 
-- **B.E. Information Science & Engineering**, The National Institute of Engineering, Mysuru (2023–2027), CGPA 7.60
+- **B.E. Information Science & Engineering**, The National Institute of Engineering, Mysuru (2023–2027), CGPA 7.63
 - **Pre-University (PCMC)**, Creative PU College, Karkala (2023), 96.33%
 
 ## Contact
