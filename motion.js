@@ -21,13 +21,19 @@
       [...node.childNodes].forEach((n) => {
         if (n.nodeType === 3) {
           const frag = document.createDocumentFragment();
-          [...n.textContent].forEach((ch) => {
-            if (ch.trim() === '') { frag.appendChild(document.createTextNode(ch)); return; }
-            const s = document.createElement('span');
-            s.className = 'ltr';
-            s.textContent = ch;
-            frag.appendChild(s);
-            letters.push(s);
+          n.textContent.split(/(\s+)/).forEach((word) => {
+            if (!word) return;
+            if (/^\s+$/.test(word)) { frag.appendChild(document.createTextNode(word)); return; }
+            const w = document.createElement('span');
+            w.className = 'word';            // keeps the word on one line
+            [...word].forEach((ch) => {
+              const s = document.createElement('span');
+              s.className = 'ltr';
+              s.textContent = ch;
+              w.appendChild(s);
+              letters.push(s);
+            });
+            frag.appendChild(w);
           });
           n.replaceWith(frag);
         } else if (n.nodeType === 1 && n.tagName !== 'BR') {

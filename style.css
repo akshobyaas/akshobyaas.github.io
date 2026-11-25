@@ -222,7 +222,7 @@ section {
 
 .hero-name {
   font-family: var(--font-display); font-weight: 900;
-  font-size: clamp(2.8rem, 6.5vw, 5.5rem);
+  font-size: clamp(2.6rem, 6vw, 5.2rem);
   line-height: 1; letter-spacing: 0.03em;
   color: var(--white);
   text-shadow: 0 0 60px rgba(225,29,44,0.2);
@@ -872,6 +872,7 @@ body.go nav { animation: slideDown 0.7s 0.15s cubic-bezier(0.16,1,0.3,1) forward
 /* --- Hero: plain fade when GSAP isn't available --- */
 html:not(.gsap-on) body.go .hero-left > *,
 html:not(.gsap-on) body.go .hero-right { animation: fadeUp 0.6s both; }
+.hero-name .word { display: inline-block; white-space: nowrap; }
 .hero-name .ltr { display: inline-block; will-change: transform; }
 
 /* --- Start gantry --- */
