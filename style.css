@@ -1,3 +1,14 @@
+/* ===== FONTS (self-hosted Formula1 Display) ===== */
+@font-face { font-family: 'F1 Display'; font-weight: 400; font-style: normal; font-display: swap; src: url('fonts/f1-regular.woff2') format('woff2'); }
+@font-face { font-family: 'F1 Display'; font-weight: 700 900; font-style: normal; font-display: swap; src: url('fonts/f1-bold.woff2') format('woff2'); }
+@font-face { font-family: 'Titillium Web'; font-weight: 300; font-style: normal; font-display: swap; src: url('fonts/titillium-300.woff2') format('woff2'); }
+@font-face { font-family: 'Titillium Web'; font-weight: 400; font-style: normal; font-display: swap; src: url('fonts/titillium-400.woff2') format('woff2'); }
+@font-face { font-family: 'Titillium Web'; font-weight: 600; font-style: normal; font-display: swap; src: url('fonts/titillium-600.woff2') format('woff2'); }
+@font-face { font-family: 'Titillium Web'; font-weight: 700; font-style: normal; font-display: swap; src: url('fonts/titillium-700.woff2') format('woff2'); }
+@font-face { font-family: 'Titillium Web'; font-weight: 900; font-style: normal; font-display: swap; src: url('fonts/titillium-900.woff2') format('woff2'); }
+@font-face { font-family: 'Titillium Web'; font-weight: 400; font-style: italic; font-display: swap; src: url('fonts/titillium-400-italic.woff2') format('woff2'); }
+@font-face { font-family: 'F1 Wide'; font-weight: 400 900; font-style: normal; font-display: swap; src: url('fonts/f1-wide.woff2') format('woff2'); }
+
 /* ===== CSS VARIABLES ===== */
 :root {
   --bg: #080808;
@@ -14,10 +25,11 @@
   --border-red: rgba(225,29,44,0.25);
   --glow-red: 0 0 40px rgba(225,29,44,0.35);
   --glow-red-soft: 0 0 20px rgba(225,29,44,0.15);
-  --font-head: 'Formula1 Display-Bold Bold', 'Formula1 Display-Regular', sans-serif;
-  --font-display: 'Formula1 Display-Black', 'Formula1 Display-Bold Bold', sans-serif;
-  --font-body: 'Titillium Web', sans-serif;
-  --font-text: 'Titillium Web', sans-serif;
+  --font-head: 'F1 Display', 'Titillium Web';
+  --font-display: 'F1 Display', 'Titillium Web';
+  --font-wide: 'F1 Wide', 'F1 Display';
+  --font-body: 'Titillium Web';
+  --font-text: 'Titillium Web';
 }
 
 /* ===== RESET ===== */
@@ -28,6 +40,7 @@ html {
   overflow-y: scroll;
 }
 body {
+  font-synthesis: none;
   background: var(--bg);
   color: var(--white);
   font-family: var(--font-text);
@@ -37,6 +50,8 @@ body {
   overflow-y: auto;
 }
 body.has-pointer { cursor: none; }
+
+button, input, select, textarea { font-family: inherit; }
 
 /* ===== SCROLLBAR ===== */
 ::-webkit-scrollbar { width: 4px; }
@@ -899,7 +914,7 @@ html:not(.gsap-on) body.go .hero-right { animation: fadeUp 0.6s both; }
 
 /* --- Giant outlined section numbers --- */
 .sec-header { position: relative; }
-.sec-num { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -55%);
+.sec-num { font-family: var(--font-wide) !important; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -55%);
   z-index: -1; pointer-events: none; user-select: none;
   font-family: var(--font-display); font-weight: 900; line-height: 1;
   font-size: clamp(7rem, 20vw, 15rem); color: transparent;
@@ -918,10 +933,10 @@ html:not(.gsap-on) body.go .hero-right { animation: fadeUp 0.6s both; }
   background: linear-gradient(90deg, rgba(225,29,44,0.08), rgba(225,29,44,0.02), rgba(225,29,44,0.08));
   padding: 0.9rem 0; transform: skewY(-1.5deg); margin: 1rem 0; }
 .marquee-track { display: inline-flex; align-items: center; gap: 1.6rem; will-change: transform; }
-.mq-item { font-family: var(--font-display); font-weight: 900; text-transform: uppercase;
+.mq-item { font-family: var(--font-wide); font-weight: 900; text-transform: uppercase;
   font-size: clamp(1rem, 2.2vw, 1.6rem); letter-spacing: 0.08em; color: var(--white); }
 .mq-item:nth-child(4n+1) { color: transparent; -webkit-text-stroke: 1px rgba(241,245,249,0.7); }
-.mq-sep { color: var(--red); font-size: 0.8rem; }
+.mq-sep { width: 9px; height: 9px; background: var(--red); transform: rotate(45deg); flex-shrink: 0; box-shadow: 0 0 8px rgba(225,29,44,0.6); }
 html:not(.gsap-on) .marquee-track { animation: mq 30s linear infinite; }
 @keyframes mq { to { transform: translateX(-50%); } }
 
