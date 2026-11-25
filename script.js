@@ -1,31 +1,4 @@
-/* ===== LOADER — short, skipped on repeat visits and for reduced motion ===== */
-(function () {
-  const loader = document.getElementById('loader');
-  const pct = document.getElementById('loader-pct');
-  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  let seen = false;
-  try { seen = sessionStorage.getItem('loader_seen') === '1'; sessionStorage.setItem('loader_seen', '1'); } catch (e) {}
-
-  function startRpm() {
-    setTimeout(() => {
-      const rpmBar = document.getElementById('rpm-bar');
-      if (rpmBar) rpmBar.style.width = '86%';
-    }, 300);
-  }
-
-  if (!loader) { startRpm(); return; }
-  if (reduce || seen) { loader.classList.add('hidden'); startRpm(); return; }
-
-  const DURATION = 900; // was 2100ms after full page load; don't make recruiters wait
-  const t0 = performance.now();
-  (function tick(now) {
-    const p = Math.min(100, Math.round(((now - t0) / DURATION) * 100));
-    if (pct) pct.textContent = p + '%';
-    if (p < 100) requestAnimationFrame(tick);
-  })(t0);
-
-  setTimeout(() => { loader.classList.add('hidden'); startRpm(); }, DURATION);
-})();
+/* Loader, intro and scroll animations live in motion.js */
 
 /* ===== CUSTOM CURSOR — pointer devices only (fix #2) ===== */
 if (window.matchMedia('(pointer: fine)').matches) {
