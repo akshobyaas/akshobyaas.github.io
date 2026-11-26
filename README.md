@@ -39,7 +39,7 @@ Fonts: Formula1 Display (headings) and Titillium Web (body).
 | PitLog | Django, PostgreSQL, Chart.js, PWA | [Code](https://github.com/akshobyaas/fuel-service-tracker) |
 | ISHMS | Django, scikit-learn, Chart.js | [Code](https://github.com/akshobyaas/ishms) |
 | Used Car Price Predictor | Python, XGBoost, Streamlit | [Code](https://github.com/akshobyaas/used-car-price-prediction) · [Live](https://used-car-price-prediction-ml.streamlit.app/) |
-| My Vault | Vanilla JS, Vercel, Google Sheets/Drive APIs | [Code](https://github.com/akshobyaas/vault) |
+| My Vault | Vanilla JS, Vercel, Google Sheets/Drive APIs | [Code](https://github.com/akshobyaas/vault) · [Live](https://ak-vault.vercel.app/) |
 
 ## Education
 
