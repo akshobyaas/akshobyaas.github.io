@@ -34,7 +34,7 @@ Fonts: Formula1 Display (headings) and Titillium Web (body).
 |---|---|---|
 | AI Semester Companion | React, Express, MongoDB, OpenAI, RAG, Redis, Docker | [Code](https://github.com/akshobyaas/ai-semester-companion) |
 | Smart Farming System (B.E. major project) | Django, React, TensorFlow/MobileNetV2, Gemini | [Code](https://github.com/akshobyaas/farmmjr) |
-| Haajari | MERN, PWA, offline sync | [Code](https://github.com/akshobyaas/haajari) |
+| Haajari | MERN, PWA, offline sync | [Code](https://github.com/akshobyaas/haajari) · [Live](https://haajari.onrender.com/login) |
 | Namma Kannada | Vanilla JS, Vercel | [Code](https://github.com/akshobyaas/nammakannada-ak) · [Live](https://nammakannada-ak.vercel.app) |
 | PitLog | Django, PostgreSQL, Chart.js, PWA | [Code](https://github.com/akshobyaas/fuel-service-tracker) |
 | ISHMS | Django, scikit-learn, Chart.js | [Code](https://github.com/akshobyaas/ishms) |
