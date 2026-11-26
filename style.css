@@ -981,3 +981,10 @@ html:not(.gsap-on) .podium-step.is-me { background: linear-gradient(180deg, rgba
 
 /* Custom cursor only exists for mouse users */
 body:not(.has-pointer) #cursor-dot, body:not(.has-pointer) #cursor-ring { display: none; }
+
+/* Award tag on a project card (links to Results) */
+.proj-award { display: inline-flex; align-items: center; gap: 0.35rem; margin-left: auto; margin-right: 0.75rem;
+  padding: 0.22rem 0.55rem; border-radius: 3px; background: var(--red); color: #fff; text-decoration: none;
+  font: 700 0.62rem var(--font-head); letter-spacing: 0.12em; text-transform: uppercase;
+  box-shadow: 0 0 14px rgba(225,29,44,0.45); transition: transform 0.2s, box-shadow 0.2s; }
+.proj-award:hover { transform: translateY(-1px); box-shadow: 0 0 22px rgba(225,29,44,0.7); }
